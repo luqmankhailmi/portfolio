@@ -1,0 +1,48 @@
+@import url('base.css');
+
+:root {
+  --bg: #f3faf6;
+  --bg2: #ffffff;
+  --bg3: #e5f4eb;
+  --card: rgba(0,0,0,0.02);
+  --card-border: rgba(0,0,0,0.08);
+  --green-light: #16a34a;
+  --green-mid: #22c55e;
+  --green-glow: rgba(22,163,74,0.15);
+  --gold: #b98a2e;
+  --gold-light: #d4a843;
+  --text: #04120a;
+  --text-muted: #4b5563;
+  --text-dim: #9ca3af;
+}
+
+/* Light-mode specific tweaks */
+nav {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+
+.nav-logo {
+  color: var(--green-light);
+}
+
+.nav-links a {
+  color: var(--text-muted);
+}
+
+.nav-links a:hover {
+  color: var(--green-light);
+}
+
+.nav-links .btn-ghost,
+#theme-toggle {
+  color: var(--text-muted);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.nav-links .btn-ghost:hover,
+#theme-toggle:hover {
+  color: var(--green-light);
+  border-color: var(--green-light);
+}
+
