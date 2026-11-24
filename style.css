@@ -47,6 +47,9 @@ body {
 }
 .skip-link:focus { left: 8px; }
 
+/* --- Base Interactive --- */
+a, button { cursor: pointer; }
+
 /* --- Focus Visible --- */
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -185,12 +188,14 @@ nav {
   border: 1px solid var(--accent);
 }
 .btn-primary:hover { background: #245a42; }
+.btn-primary:active { background: #1e4d38; }
 .btn-outline {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--border);
 }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+.btn-outline:active { background: var(--bg-alt); }
 
 /* --- About --- */
 .about-layout {
@@ -278,11 +283,13 @@ nav {
   transition: all 0.15s;
 }
 .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn:active { background: var(--bg-alt); }
 .filter-btn.active {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
 }
+.filter-btn.active:active { background: #245a42; }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -491,6 +498,7 @@ nav {
   transition: border-color 0.15s;
 }
 .contact-link:hover { border-color: var(--accent); }
+.contact-link:active { background: var(--bg-alt); border-color: var(--accent); }
 .contact-link svg { flex-shrink: 0; color: var(--text-l); }
 .contact-type {
   display: block;
@@ -524,6 +532,9 @@ footer p {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
 
 /* --- Responsive --- */
