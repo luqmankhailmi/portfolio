@@ -4,417 +4,364 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luqman Khailmi | Full-Stack Developer</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link id="theme-stylesheet" rel="stylesheet" href="dark-mode.css">
+  <title>Luqman Khailmi | Data & Software Developer</title>
+  <meta name="description" content="Luqman Khailmi - Computer Science student at UiTM Shah Alam specialising in data analytics and software development.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="bg-canvas">
-    <div class="grid-lines"></div>
-  </div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- NAV -->
-  <nav>
-    <div class="nav-logo">Luqman Khailmi</div>
-    <ul class="nav-links">
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button type="button" class="btn-ghost" id="theme-toggle">Theme ()</button></li>
-    </ul>
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Luqman Khailmi</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
+
+  <main id="main-content">
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-tag">Full-Stack Developer · Malaysia</div>
-    <h1>Luqman<br><em>Khailmi</em></h1>
-    <p class="hero-sub">Building modern web applications end-to-end — from React frontends to Spring Boot APIs to
-      containerised deployments. Also crafts data dashboards that turn raw numbers into clear insights.</p>
+    <p class="hero-label">Data Analytics + Software Development</p>
+    <h1>Luqman Khailmi</h1>
+    <p class="hero-sub">CS student at UiTM Shah Alam who builds dashboards that people actually use and writes code that solves real problems. Currently turning research data into something decision-makers can act on.</p>
     <div class="hero-cta">
-      <a href="https://github.com/luqmankhailmi" target="_blank" class="btn-primary">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-        </svg>
+      <a href="https://github.com/luqmankhailmi" target="_blank" rel="noopener" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
+      <a href="https://www.linkedin.com/in/luqmanhanisdaniel" target="_blank" rel="noopener" class="btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
     </div>
   </section>
 
-  <div class="section-divider"></div>
+  <hr class="divider">
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <h2>About</h2>
+    </div>
+    <div class="about-layout">
+      <div class="about-text reveal">
+        <p>I got into data work during my internship at UiTM Global, where I built dashboards tracking international partnerships across the university system. Seeing raw spreadsheet data turn into something a director could actually use in a meeting changed how I think about software.</p>
+        <p>Now I split my time between data analytics and building full-stack applications. On the data side, I work with Looker Studio, Power BI, and Python. On the development side, I build with Java, JavaScript, and frameworks like Spring Boot and Express.js. I also have hands-on experience with TensorFlow and Keras from AI coursework.</p>
+        <p>I speak Malay natively, English professionally (MUET Band 4.0), and I am picking up Mandarin through three completed levels at UiTM.</p>
+      </div>
+      <div class="about-sidebar reveal">
+        <dl class="info-list">
+          <div class="info-item"><dt>Location</dt><dd>Selangor, Malaysia</dd></div>
+          <div class="info-item"><dt>University</dt><dd>UiTM Shah Alam</dd></div>
+          <div class="info-item"><dt>Programme</dt><dd>BSc Computer Science (Hons.)</dd></div>
+          <div class="info-item"><dt>CGPA</dt><dd>3.46</dd></div>
+          <div class="info-item"><dt>Languages</dt><dd>Malay, English, Mandarin</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <div class="section-header reveal">
-      <span class="section-num">01</span>
-      <h2 class="section-title">Skills</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="skills-layout">
-      <div class="skill-category reveal reveal-delay-1">
-        <div class="skill-cat-label">Frontend</div>
-        <div class="skill-cat-title">User Interfaces</div>
+    <div class="section-header reveal"><h2>Skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">Data & Analytics</h3>
         <div class="skill-tags">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag dim">Bootstrap</span>
+          <span class="tag accent">Google Looker Studio</span>
+          <span class="tag accent">Power BI</span>
+          <span class="tag accent">Google Sheets</span>
+          <span class="tag accent">Google Forms</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-2">
-        <div class="skill-cat-label">Backend</div>
-        <div class="skill-cat-title">Server & APIs</div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">AI & Machine Learning</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Spring Boot</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag dim">PHP</span>
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Keras</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-2">
-        <div class="skill-cat-label">Database & DevOps</div>
-        <div class="skill-cat-title">Storage & Deployment</div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">Frontend</h3>
         <div class="skill-tags">
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Railway</span>
-          <span class="skill-tag dim">File I/O (Java)</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag muted">Bootstrap</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-3">
-        <div class="skill-cat-label">Data & Analytics</div>
-        <div class="skill-cat-title">Dashboards & Reporting</div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">Backend</h3>
         <div class="skill-tags">
-          <span class="skill-tag gold">Google Looker Studio</span>
-          <span class="skill-tag gold">Google Sheets</span>
-          <span class="skill-tag gold">Google Forms</span>
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag muted">PHP</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-3">
-        <div class="skill-cat-label">Languages</div>
-        <div class="skill-cat-title">Programming Languages</div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">Databases</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag dim">C++</span>
-          <span class="skill-tag dim">PHP</span>
-          <span class="skill-tag dim">Python (learning)</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Oracle</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">PostgreSQL</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-4">
-        <div class="skill-cat-label">Tools</div>
-        <div class="skill-cat-title">Dev Toolchain</div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">DevOps & Tools</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag dim">Git & GitHub</span>
-          <span class="skill-tag dim">VS Code</span>
-          <span class="skill-tag dim">IntelliJ IDEA</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git & GitHub</span>
+          <span class="tag muted">Postman</span>
+          <span class="tag muted">Railway</span>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="section-divider"></div>
+  <hr class="divider">
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <div class="section-header reveal">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Projects</h2>
-      <div class="section-line"></div>
-    </div>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom: 24px;">
-      <button type="button" class="btn-primary" data-project-filter="professional"
-        aria-pressed="true">Professional</button>
-      <button type="button" class="btn-ghost" data-project-filter="academic" aria-pressed="false">Academic</button>
-      <button type="button" class="btn-ghost" data-project-filter="personal" aria-pressed="false">Personal</button>
+    <div class="section-header reveal"><h2>Projects</h2></div>
+    <div class="project-filters" role="group" aria-label="Filter projects by category">
+      <button type="button" class="filter-btn active" data-project-filter="professional" aria-pressed="true">Professional</button>
+      <button type="button" class="filter-btn" data-project-filter="academic" aria-pressed="false">Academic</button>
+      <button type="button" class="filter-btn" data-project-filter="personal" aria-pressed="false">Personal</button>
     </div>
     <div class="projects-grid">
 
-      <!-- Featured -->
-      <div class="project-card featured reveal reveal-delay-1" data-project-category="professional">
-        <div class="project-badge"
-          style="background:rgba(212,168,67,0.15);border-color:rgba(212,168,67,0.3);color:var(--gold-light);">Internship
-        </div>
-        <div class="project-num">001 · Professional</div>
-        <div class="project-name">International Engagement Dashboard</div>
-        <p class="project-desc">Live dashboard for UiTM Global DSP tracking PI081–PI084 international engagement
-          metrics, deployed for real stakeholder use.</p>
-        <div class="project-stack">
-          <span class="stack-badge">Google Looker Studio</span>
-          <span class="stack-badge">Google Sheets</span>
-          <span class="stack-badge">Google Forms</span>
-        </div>
-        <a href="https://lookerstudio.google.com/reporting/cbcad387-9d17-49fd-ba89-f703c959052a/page/p_uigisihsnd"
-          target="_blank" class="project-link">View Dashboard →</a>
+      <div class="project-card featured reveal" data-project-category="professional">
+        <span class="project-label">Internship</span>
+        <h3 class="project-name">International Engagement Dashboard</h3>
+        <p class="project-desc">Live dashboard built for UiTM Global's Department of Strategic Partnership. Tracks PI081 through PI084 international engagement metrics and is used by real stakeholders for reporting.</p>
+        <div class="project-stack"><span class="stack-tag">Google Looker Studio</span><span class="stack-tag">Google Sheets</span><span class="stack-tag">Google Forms</span></div>
+        <a href="https://lookerstudio.google.com/reporting/cbcad387-9d17-49fd-ba89-f703c959052a/page/p_uigisihsnd" target="_blank" rel="noopener" class="project-link">View Dashboard &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-2" data-project-category="personal">
-        <div class="project-num">002 · Personal</div>
-        <div class="project-name">Monitor</div>
-        <p class="project-desc">A full-stack tracker web application built with modern technology — React frontend,
-          Spring Boot REST API, PostgreSQL persistence, and Docker containerisation. The flagship project demonstrating
-          end-to-end development capability.</p>
-        <div class="project-stack">
-          <span class="stack-badge">React</span>
-          <span class="stack-badge">Spring Boot</span>
-          <span class="stack-badge">PostgreSQL</span>
-          <span class="stack-badge">Docker</span>
-          <span class="stack-badge">Java</span>
-        </div>
-        <a href="https://github.com/soulnim/Monitor" target="_blank" class="project-link">View Repository →</a>
+      <div class="project-card reveal" data-project-category="professional">
+        <span class="project-label current">Current</span>
+        <h3 class="project-name">Research Performance Dashboard</h3>
+        <p class="project-desc">KPI dashboards for the Faculty of Mechanical Engineering at UiTM Shah Alam. Building data pipelines and interactive visualisations to track faculty research output.</p>
+        <div class="project-stack"><span class="stack-tag">Google Looker Studio</span><span class="stack-tag">Google Sheets</span><span class="stack-tag">Data Analysis</span></div>
       </div>
 
-      <div class="project-card reveal reveal-delay-2" data-project-category="personal">
-        <div class="project-num">003 · Personal</div>
-        <div class="project-name">Circles</div>
-        <p class="project-desc">A family heritage and genealogy tracker. Visualises lineage relationships with a clean
-          web interface backed by a Java backend.</p>
-        <div class="project-stack">
-          <span class="stack-badge">HTML</span>
-          <span class="stack-badge">CSS</span>
-          <span class="stack-badge">JavaScript</span>
-          <span class="stack-badge">Java</span>
-        </div>
-        <a href="https://github.com/soulnim/Circles" target="_blank" class="project-link">View Repository →</a>
+      <div class="project-card reveal" data-project-category="personal">
+        <h3 class="project-name">Monitor</h3>
+        <p class="project-desc">Full-stack tracker built end-to-end: React frontend, Spring Boot REST API, PostgreSQL database, containerised with Docker and deployed on Railway.</p>
+        <div class="project-stack"><span class="stack-tag">React</span><span class="stack-tag">Spring Boot</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">Docker</span></div>
+        <a href="https://github.com/soulnim/Monitor" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-2" data-project-category="academic">
-        <div class="project-num">004 · Academic</div>
-        <div class="project-name">Cuaca</div>
-        <p class="project-desc">HarvardX CS50 Final Project — a weather app that fetches live data from the
-          OpenWeatherMap API and presents current conditions by city.</p>
-        <div class="project-stack">
-          <span class="stack-badge">HTML</span>
-          <span class="stack-badge">CSS</span>
-          <span class="stack-badge">JavaScript</span>
-          <span class="stack-badge">OpenWeatherMap API</span>
-        </div>
-        <a href="https://github.com/luqmankhailmi/Cuaca" target="_blank" class="project-link">View Repository →</a>
+      <div class="project-card reveal" data-project-category="personal">
+        <h3 class="project-name">Circles</h3>
+        <p class="project-desc">Family heritage and genealogy tracker. Visualises lineage relationships through a web interface backed by a Java backend.</p>
+        <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Java</span></div>
+        <a href="https://github.com/soulnim/Circles" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-3" data-project-category="academic">
-        <div class="project-num">005 · Academic</div>
-        <div class="project-name">URCR System</div>
-        <p class="project-desc">UiTM Raub Club Registration System — a hub for managing student club activities,
-          memberships, and registrations on campus.</p>
-        <div class="project-stack">
-          <span class="stack-badge">PHP</span>
-          <span class="stack-badge">HTML</span>
-          <span class="stack-badge">CSS</span>
-        </div>
-        <a href="https://github.com/luqmankhailmi/URCR-System" target="_blank" class="project-link">View Repository
-          →</a>
+      <div class="project-card reveal" data-project-category="personal">
+        <h3 class="project-name">Quran Murajaah Tracker</h3>
+        <p class="project-desc">Personal web app for tracking Quran memorisation progress. Built to practise Bootstrap integration in a real use case.</p>
+        <div class="project-stack"><span class="stack-tag">JavaScript</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+        <a href="https://github.com/luqmankhailmi/quran-murajaah-tracker" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-1" data-project-category="academic">
-        <div class="project-num">006 · Academic</div>
-        <div class="project-name">Clinic Management System</div>
-        <p class="project-desc">A clinic appointment system (CSC248 Mini Project) to manage patients, doctors, and
-          appointments. Gained 3 GitHub forks.</p>
-        <div class="project-stack">
-          <span class="stack-badge">Java</span>
-          <span class="stack-badge">OOP</span>
-        </div>
-        <a href="https://github.com/luqmankhailmi/Clinic-Management-System" target="_blank" class="project-link">View
-          Repository →</a>
+      <div class="project-card reveal" data-project-category="academic">
+        <h3 class="project-name">Cuaca</h3>
+        <p class="project-desc">HarvardX CS50 Final Project. A weather app that pulls live data from the OpenWeatherMap API and shows current conditions by city.</p>
+        <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">OpenWeatherMap API</span></div>
+        <a href="https://github.com/luqmankhailmi/Cuaca" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-2" data-project-category="academic">
-        <div class="project-num">007 · Academic</div>
-        <div class="project-name">Expenses Tracker</div>
-        <p class="project-desc">A Java CLI app for recording and monitoring expenses and assets, implementing
-          inheritance and file I/O for data persistence.</p>
-        <div class="project-stack">
-          <span class="stack-badge">Java</span>
-          <span class="stack-badge">Inheritance</span>
-          <span class="stack-badge">File I/O</span>
-        </div>
-        <a href="https://github.com/luqmankhailmi/Expenses-Tracker-With-Java" target="_blank" class="project-link">View
-          Repository →</a>
+      <div class="project-card reveal" data-project-category="academic">
+        <h3 class="project-name">URCR System</h3>
+        <p class="project-desc">UiTM Raub Club Registration System. Manages student club activities, memberships, and registration workflows on campus.</p>
+        <div class="project-stack"><span class="stack-tag">PHP</span><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+        <a href="https://github.com/luqmankhailmi/URCR-System" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-3" data-project-category="personal">
-        <div class="project-num">008 · Personal</div>
-        <div class="project-name">Quran Murajaah Tracker</div>
-        <p class="project-desc">A personal web app for tracking Quran memorisation progress. Built to practise Bootstrap
-          integration in a real project.</p>
-        <div class="project-stack">
-          <span class="stack-badge">JavaScript</span>
-          <span class="stack-badge">Bootstrap</span>
-          <span class="stack-badge">HTML</span>
-          <span class="stack-badge">CSS</span>
-        </div>
-        <a href="https://github.com/luqmankhailmi/quran-murajaah-tracker" target="_blank" class="project-link">View
-          Repository →</a>
+      <div class="project-card reveal" data-project-category="academic">
+        <h3 class="project-name">Clinic Management System</h3>
+        <p class="project-desc">CSC248 Mini Project for managing patients, doctors, and appointments. Picked up 3 GitHub forks from other students.</p>
+        <div class="project-stack"><span class="stack-tag">Java</span><span class="stack-tag">OOP</span></div>
+        <a href="https://github.com/luqmankhailmi/Clinic-Management-System" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-4" data-project-category="academic">
-        <div class="project-num">009 · Academic</div>
-        <div class="project-name">KShoppe OODS</div>
-        <p class="project-desc">KShoppe Online Ordering & Delivery System — a C++ console app allowing students to order
-          food from a campus shop without walking over.</p>
-        <div class="project-stack">
-          <span class="stack-badge">C++</span>
-          <span class="stack-badge">OOP</span>
-        </div>
-        <a href="https://github.com/luqmankhailmi/KShoppe-OODS" target="_blank" class="project-link">View Repository
-          →</a>
+      <div class="project-card reveal" data-project-category="academic">
+        <h3 class="project-name">Expenses Tracker</h3>
+        <p class="project-desc">Java CLI app for recording expenses and assets. Uses inheritance and file I/O to persist data between sessions.</p>
+        <div class="project-stack"><span class="stack-tag">Java</span><span class="stack-tag">Inheritance</span><span class="stack-tag">File I/O</span></div>
+        <a href="https://github.com/luqmankhailmi/Expenses-Tracker-With-Java" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
       </div>
 
+      <div class="project-card reveal" data-project-category="academic">
+        <h3 class="project-name">KShoppe OODS</h3>
+        <p class="project-desc">Online Ordering and Delivery System for a campus shop. C++ console app letting students order food without leaving their dorm.</p>
+        <div class="project-stack"><span class="stack-tag">C++</span><span class="stack-tag">OOP</span></div>
+        <a href="https://github.com/luqmankhailmi/KShoppe-OODS" target="_blank" rel="noopener" class="project-link">View Repository &rarr;</a>
+      </div>
     </div>
     <script>
       (() => {
         const buttons = Array.from(document.querySelectorAll('[data-project-filter]'));
         const cards = Array.from(document.querySelectorAll('#projects [data-project-category]'));
-
-        const setActiveButton = (activeCategory) => {
-          buttons.forEach((btn) => {
-            const isActive = btn.getAttribute('data-project-filter') === activeCategory;
-            btn.classList.toggle('btn-primary', isActive);
-            btn.classList.toggle('btn-ghost', !isActive);
-            btn.setAttribute('aria-pressed', String(isActive));
-          });
-        };
-
         const applyFilter = (category) => {
-          cards.forEach((card) => {
-            const matches = card.getAttribute('data-project-category') === category;
-            card.style.display = matches ? '' : 'none';
-          });
-          setActiveButton(category);
+          cards.forEach(card => { card.style.display = card.getAttribute('data-project-category') === category ? '' : 'none'; });
+          buttons.forEach(btn => { const a = btn.getAttribute('data-project-filter') === category; btn.classList.toggle('active', a); btn.setAttribute('aria-pressed', String(a)); });
         };
-
-        buttons.forEach((btn) => {
-          btn.addEventListener('click', () => applyFilter(btn.getAttribute('data-project-filter')));
-        });
-
+        buttons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.getAttribute('data-project-filter'))));
         applyFilter('professional');
       })();
     </script>
   </section>
 
-  <div class="section-divider"></div>
+  <hr class="divider">
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
-    <div class="section-header reveal">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Experience</h2>
-      <div class="section-line"></div>
+    <div class="section-header reveal"><h2>Experience</h2></div>
+    <div class="exp-list">
+      <article class="exp-card reveal">
+        <div class="exp-top">
+          <div><h3 class="exp-role">Dashboard Dev Assistant</h3><p class="exp-org">Faculty of Mechanical Engineering, UiTM</p><p class="exp-dept">MySISWA Job on Campus (JoC)</p></div>
+          <div class="exp-meta-right"><span class="exp-date">Nov 2026 - Present</span><span class="exp-loc">Shah Alam, Selangor</span></div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Building and maintaining KPI dashboards for faculty research performance tracking</li>
+          <li>Processing and structuring research output data for analysis and reporting</li>
+        </ul>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-top">
+          <div><h3 class="exp-role">Intern, Computer Science</h3><p class="exp-org">UiTM Global</p><p class="exp-dept">Department of Strategic Partnership (DSP)</p></div>
+          <div class="exp-meta-right"><span class="exp-date">Sep 2024 - Feb 2025</span><span class="exp-loc">Shah Alam, Selangor</span></div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Developed interactive dashboards using Google Looker Studio integrated with Google Forms and Sheets</li>
+          <li>Built the UiTM Global Engagement, BMI participant, and strategic partnership tracker dashboards</li>
+          <li>Compiled, cleaned, and structured international partnership data for analysis and reporting</li>
+          <li>Supported digital transformation initiatives with data handling and dashboard design</li>
+          <li>Emceed and coordinated internal events, managed logistics and departmental workflows</li>
+        </ul>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-top">
+          <div><h3 class="exp-role">Parcel Operations Assistant</h3><p class="exp-org">Rakan SPARK</p><p class="exp-dept">Sistem Parcel Kolej, UiTM Raub</p></div>
+          <div class="exp-meta-right"><span class="exp-date">Oct 2022 - Jan 2023</span><span class="exp-loc">Raub, Pahang</span></div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Managed parcel intake, sorting, and distribution for the campus parcel system</li>
+          <li>Coordinated logistics operations serving the student residential community</li>
+        </ul>
+      </article>
     </div>
-    <div class="exp-card reveal">
-      <div class="exp-meta">
-        <span class="exp-badge role">Intern · Computer Science</span>
-        <span class="exp-badge date">Sep 2024 – Feb 2025</span>
-        <span class="exp-badge loc">Shah Alam, Selangor</span>
-      </div>
-      <div class="exp-org">UiTM Global</div>
-      <div class="exp-dept">Department of Strategic Partnership (DSP)</div>
-      <div class="exp-items">
-        <div class="exp-item">Developed interactive dashboards using Google Looker Studio integrated with Google Forms &
-          Sheets</div>
-        <div class="exp-item">Built the "UiTM Global Engagement", BMI participant, and strategic partnership tracker
-          dashboards</div>
-        <div class="exp-item">Compiled, cleaned, and structured international partnership data for analysis & reporting
+  </section>
+
+  <hr class="divider">
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-header reveal"><h2>Education</h2></div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <p class="edu-level">Bachelor's Degree</p>
+        <h3 class="edu-degree">Bachelor of Computer Science (Hons.)</h3>
+        <p class="edu-school">Universiti Teknologi MARA (UiTM), Shah Alam</p>
+        <p class="edu-period">Mar 2025 - Present &middot; Expected Aug 2027</p>
+        <div class="edu-highlights">
+          <div class="edu-highlight"><span class="edu-num">3.46</span><span class="edu-label">CGPA</span></div>
+          <div class="edu-highlight"><span class="edu-num">2&times;</span><span class="edu-label">Dean's List</span></div>
         </div>
-        <div class="exp-item">Supported digital transformation initiatives with data handling and dashboard design</div>
-        <div class="exp-item">Emceed and coordinated internal events, managed logistics and departmental workflows</div>
-        <div class="exp-item">Applied data analysis skills to improve visibility of UiTM's international collaborations
-        </div>
+        <p class="edu-note">Dean's List in Part 3 (GPA 3.52) and Part 5 (GPA 3.57)</p>
       </div>
-      <div class="exp-impact">
-        <strong>Impact:</strong> Improved visibility of UiTM's international collaborations and streamlined reporting
-        processes for the Department of Strategic Partnership.
+      <div class="edu-card reveal">
+        <p class="edu-level">Diploma</p>
+        <h3 class="edu-degree">Diploma in Computer Science</h3>
+        <p class="edu-school">Universiti Teknologi MARA (UiTM), Raub</p>
+        <p class="edu-period">Completed</p>
+        <div class="edu-highlights">
+          <div class="edu-highlight"><span class="edu-num">3.79</span><span class="edu-label">CGPA</span></div>
+        </div>
+        <p class="edu-note">Vice Chancellor's Award recipient</p>
+      </div>
+    </div>
+    <div class="certs reveal">
+      <h3 class="certs-heading">Certifications</h3>
+      <div class="certs-list">
+        <div class="cert"><p class="cert-name">Understanding Digital Transformation</p><p class="cert-meta">MyDIGITAL Corporation &middot; Nov 2026</p></div>
+        <div class="cert"><p class="cert-name">Data Visualization</p><p class="cert-meta">Kaggle &middot; Oct 2024</p></div>
+        <div class="cert"><p class="cert-name">CS50's Introduction to Computer Science</p><p class="cert-meta">HarvardX</p></div>
       </div>
     </div>
   </section>
 
-  <div class="section-divider"></div>
+  <hr class="divider">
 
   <!-- CONTACT -->
   <section class="section" id="contact">
-    <div class="section-header reveal">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Contact</h2>
-      <div class="section-line"></div>
-    </div>
+    <div class="section-header reveal"><h2>Contact</h2></div>
     <div class="contact-layout">
       <div class="reveal">
-        <div class="contact-intro">Let's build<br>something <em>great</em><br>together.</div>
-        <p class="contact-sub">Currently a Semester 4 Computer Science student at UiTM. Open to collaborations,
-          internships, and interesting projects.</p>
+        <p class="contact-heading">Got a project or opportunity?</p>
+        <p class="contact-sub">Computer Science student at UiTM Shah Alam. Open to internships, collaborations, and freelance dashboard work.</p>
       </div>
-      <div class="contact-links reveal reveal-delay-2">
-        <a href="https://github.com/luqmankhailmi" target="_blank" class="contact-link">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-            </svg>
-          </div>
-          <div>
-            <div class="contact-link-label">GitHub</div>
-            <div class="contact-link-val">github.com/luqmankhailmi</div>
-          </div>
+      <div class="contact-links reveal">
+        <a href="mailto:luqmanhanisdaniel@gmail.com" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+          <div><span class="contact-type">Email</span><span class="contact-val">luqmanhanisdaniel@gmail.com</span></div>
         </a>
-        <a href="https://www.linkedin.com/in/luqmanhanisdaniel" target="_blank" class="contact-link">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </div>
-          <div>
-            <div class="contact-link-label">LinkedIn</div>
-            <div class="contact-link-val">linkedin.com/in/luqmanhanisdaniel</div>
-          </div>
+        <a href="https://github.com/luqmankhailmi" target="_blank" rel="noopener" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <div><span class="contact-type">GitHub</span><span class="contact-val">github.com/luqmankhailmi</span></div>
+        </a>
+        <a href="https://www.linkedin.com/in/luqmanhanisdaniel" target="_blank" rel="noopener" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <div><span class="contact-type">LinkedIn</span><span class="contact-val">linkedin.com/in/luqmanhanisdaniel</span></div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-copy">© 2026 Luqman Khailmi · All rights reserved.</div>
-    <div class="footer-tag">Built with <span>♥</span> · Malaysia</div>
-  </footer>
+  </main>
+
+  <footer><p>&copy; 2026 Luqman Khailmi</p></footer>
 
   <script>
-    // Intersection Observer for scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     reveals.forEach(el => observer.observe(el));
 
-    // Theme toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeStylesheet = document.getElementById('theme-stylesheet');
-
-    if (themeToggle && themeStylesheet) {
-      themeToggle.addEventListener('click', () => {
-        const current = themeStylesheet.getAttribute('href') || 'light-mode.css';
-        const next = current.includes('light-mode.css') ? 'dark-mode.css' : 'light-mode.css';
-        themeStylesheet.setAttribute('href', next);
-      });
-    }
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    navToggle.addEventListener('click', () => { const e = navToggle.getAttribute('aria-expanded') === 'true'; navToggle.setAttribute('aria-expanded', String(!e)); navLinks.classList.toggle('nav-open'); });
+    navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navToggle.setAttribute('aria-expanded', 'false'); navLinks.classList.remove('nav-open'); }); });
   </script>
 
 </body>
-
 </html>
