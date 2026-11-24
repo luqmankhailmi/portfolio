@@ -33,8 +33,10 @@ Palette is 2 core (white, near-black) + 1 accent (forest green) + 1 functional o
 | IBM Plex Mono for metadata labels | Separates data/classification text from narrative prose; signals technical identity |
 | Uniform card radius (6px) | Consistent, tight, professional — not pill-shaped, not sharp |
 | Pill radius (100px) on tags and filter buttons | Tags and filters are classification tokens, not content blocks; pill shape signals "label" vs "container" |
-| Border-left accent on featured project card | Single visual accent to elevate the most important project; avoids the "colored left stripe on everything" pattern by limiting to one card |
+| Featured dashboard card | A pale green surface, stronger title, and single accent edge make the live stakeholder-facing dashboard the first project to scan. Other project cards stay neutral. |
 | No dark mode toggle | Light theme is deliberate for a professional/academic portfolio context; dark default has no branding justification here |
 | Scroll-reveal (fade up 16px) on sections | MOTION 1 with a single subtle cue; keeps page from feeling static without competing with content. No stacked animations. |
 | IBM Plex Mono + Inter pairing | Monospace/sans pairing creates a clear two-tier type hierarchy without a third typeface |
-| Section rhythm uniform (RHYTHM 1) | Intentional; uniform rhythm lets the content variations carry the page, not layout tricks |
+| KL window backdrop (`assets/kl-window-hero.png`) behind hero | The requested view from a Kuala Lumpur office gives the introduction a sense of place. The generated architectural scene is decorative; a white left-side fade keeps the name and links legible. The image stays static, so MOTION stays 1. |
+| Full-width section bands | Soft neutral bands behind Skills and Experience separate dense lists from the white narrative sections. A pale green contact band marks the final action. The sections retain the same content width and calm RHYTHM 1 spacing. |
+| Experience timeline | A single forest-green rail makes the dated roles read as a progression. The current role has a filled marker; earlier roles use open markers. Removing the card boxes lets the chronology lead without adding visual weight. |
